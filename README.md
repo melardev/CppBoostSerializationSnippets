@@ -22,5 +22,7 @@ and enjoy modern Cpp made easy.
 - [Twitter](https://twitter.com/@melardev)
 - [Instagram](https://instagram.com/melar_dev)
 
+# Resources
+- [The official docs](https://www.boost.org/doc/libs/1_69_0/libs/serialization/example/)
 # TODO
 - Port to CMake

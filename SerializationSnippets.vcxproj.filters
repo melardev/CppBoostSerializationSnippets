@@ -15,9 +15,50 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="README.xaml" />
+    <Page Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="xml\file_nvp_class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\file_nvp_hello.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\file_nvp_struct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\file_stl_containers_nvp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text\class_hierarchy_serialization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text\file_basic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text\file_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text\inmemory_shared_ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text\inmemory_sstream_serialization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text\inmemory_struct_simple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="binary\image_file_binary_serialization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="binary\inmemory_strings_serialization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\file_array_nvp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

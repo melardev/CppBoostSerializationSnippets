@@ -5,7 +5,7 @@
 #include <boost/archive/xml_iarchive.hpp>
 #include <boost/archive/xml_oarchive.hpp>
 
-// from the official docs https://www.boost.org/doc/libs/1_69_0/libs/serialization/example/
+
 namespace SerializationSaveXmlDemo
 {
 	class Character

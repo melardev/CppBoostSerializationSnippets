@@ -20,12 +20,27 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="README.xaml">
+    <Page Include="README.md">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="binary\image_file_binary_serialization.h" />
+    <ClInclude Include="binary\inmemory_strings_serialization.h" />
+    <ClInclude Include="text\class_hierarchy_serialization.h" />
+    <ClInclude Include="text\file_basic.h" />
+    <ClInclude Include="text\file_image.h" />
+    <ClInclude Include="text\inmemory_shared_ptr.h" />
+    <ClInclude Include="text\inmemory_sstream_serialization.h" />
+    <ClInclude Include="text\inmemory_struct_simple.h" />
+    <ClInclude Include="xml\file_array_nvp.h" />
+    <ClInclude Include="xml\file_nvp_class.h" />
+    <ClInclude Include="xml\file_nvp_hello.h" />
+    <ClInclude Include="xml\file_nvp_struct.h" />
+    <ClInclude Include="xml\file_stl_containers_nvp.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

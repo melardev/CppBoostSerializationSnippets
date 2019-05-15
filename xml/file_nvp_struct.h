@@ -4,22 +4,21 @@
 #include <iostream>
 #include <fstream>
 
-// Refactor the fields to title, description and maybe date
 namespace XmlFileStructNVPSerialization
 {
 	typedef struct Article
 	{
-		unsigned int m_day;
-		unsigned int m_month;
-		unsigned int m_year;
 		std::string title;
+		unsigned int day;
+		unsigned int month;
+		unsigned int year;
 
-		Article(std::string title, int day, int month, int year) : m_day(day), m_month(month), m_year(year),
+		Article(std::string title, int day, int month, int year) : day(day), month(month), year(year),
 		                                                           title(std::move(title))
 		{
 		}
 
-		Article() : m_day(1), m_month(1), m_year(2000)
+		Article() : day(1), month(1), year(2000)
 		{
 		}
 
@@ -27,9 +26,9 @@ namespace XmlFileStructNVPSerialization
 		{
 			out <<
 				"Title: " << article.title << std::endl <<
-				"Day:" << article.m_day << std::endl <<
-				"Month:" << article.m_month << std::endl <<
-				"Year:" << article.m_year << std::endl << std::endl;
+				"Day:" << article.day << std::endl <<
+				"Month:" << article.month << std::endl <<
+				"Year:" << article.year << std::endl << std::endl;
 			return out;
 		}
 
@@ -37,9 +36,9 @@ namespace XmlFileStructNVPSerialization
 		void serialize(Archive& archive, const unsigned int version)
 		{
 			archive & BOOST_SERIALIZATION_NVP(title);
-			archive & BOOST_SERIALIZATION_NVP(m_day);
-			archive & BOOST_SERIALIZATION_NVP(m_month);
-			archive & BOOST_SERIALIZATION_NVP(m_year);
+			archive & BOOST_SERIALIZATION_NVP(day);
+			archive & BOOST_SERIALIZATION_NVP(month);
+			archive & BOOST_SERIALIZATION_NVP(year);
 		}
 	} Article;
 
