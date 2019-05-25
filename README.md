@@ -17,6 +17,12 @@ boost libraries. Then I open the vcproject file and add the following inside the
 This is how I set up my environment, I strongly encourage you to do the same, take a time reading about [vcpkg](https://github.com/microsoft/vcpkg)<br>
 and enjoy modern Cpp made easy.
 
+# Notes
+- BOOST_SERIALIZATION_SPLIT_FREE should always be executed outside any namespace.
+- Don't forget the appropiate includes, if you serialize a shared_ptr<T> you need the serialization/shared_ptr.hpp
+header file.
+- Never use BOOST_EXPORT_CLASS for a base class.
+
 # Social Media
 - [Youtube](https://youtube.com/Melardev)
 - [Twitter](https://twitter.com/@melardev)

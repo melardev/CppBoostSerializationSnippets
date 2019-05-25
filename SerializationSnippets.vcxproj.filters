@@ -60,5 +60,46 @@
     <ClInclude Include="xml\file_array_nvp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="not_ready\polymorphic_shared_template.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="not_ready\polymorphic_raw_ptr_template.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="not_ready\polymorphic_shared_template_non_intrusive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="not_ready\references_serialization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="not_ready\polymorphic_template_register_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="not_ready\split_non_intrusive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="not_ready\polymorphic_split_member_func_intrusive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="not_ready\split_non_intrusive_split_free.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snippets_launcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text\polymorphic_shared_ptr\polymorphic_snippet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="binary\inmemory_polymorphism_ptr_register_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="text\polymorphic_shared_ptr\polymorphic_snippet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

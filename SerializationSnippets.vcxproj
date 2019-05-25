@@ -28,19 +28,34 @@
     <None Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="binary\inmemory_polymorphism_ptr_register_type.h" />
     <ClInclude Include="binary\image_file_binary_serialization.h" />
     <ClInclude Include="binary\inmemory_strings_serialization.h" />
+    <ClInclude Include="not_ready\polymorphic_raw_ptr_template.h" />
+    <ClInclude Include="not_ready\polymorphic_shared_template.h" />
+    <ClInclude Include="not_ready\polymorphic_shared_template_non_intrusive.h" />
+    <ClInclude Include="not_ready\polymorphic_template_register_type.h" />
+    <ClInclude Include="not_ready\references_serialization.h" />
+    <ClInclude Include="not_ready\polymorphic_split_member_func_intrusive.h" />
+    <ClInclude Include="not_ready\split_non_intrusive.h" />
+    <ClInclude Include="not_ready\split_non_intrusive_split_free.h" />
+    <ClInclude Include="snippets_launcher.h" />
     <ClInclude Include="text\class_hierarchy_serialization.h" />
     <ClInclude Include="text\file_basic.h" />
     <ClInclude Include="text\file_image.h" />
     <ClInclude Include="text\inmemory_shared_ptr.h" />
     <ClInclude Include="text\inmemory_sstream_serialization.h" />
     <ClInclude Include="text\inmemory_struct_simple.h" />
+    <ClInclude Include="text\polymorphic_shared_ptr\polymorphic_snippet.h" />
     <ClInclude Include="xml\file_array_nvp.h" />
     <ClInclude Include="xml\file_nvp_class.h" />
     <ClInclude Include="xml\file_nvp_hello.h" />
     <ClInclude Include="xml\file_nvp_struct.h" />
     <ClInclude Include="xml\file_stl_containers_nvp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="text\polymorphic_shared_ptr\polymorphic_snippet.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -66,7 +81,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -120,7 +135,7 @@
       <PrecompiledHeaderFile />
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -176,13 +191,13 @@
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\..\packages\Microsoft.Windows.CppWinRT.2.0.190506.1\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('..\..\packages\Microsoft.Windows.CppWinRT.2.0.190506.1\build\native\Microsoft.Windows.CppWinRT.targets')" />
+    <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.190506.1\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('..\..\packages\Microsoft.Windows.CppWinRT.2.0.190506.1\build\native\Microsoft.Windows.CppWinRT.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\Microsoft.Windows.CppWinRT.2.0.190506.1\build\native\Microsoft.Windows.CppWinRT.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Windows.CppWinRT.2.0.190506.1\build\native\Microsoft.Windows.CppWinRT.props'))" />
-    <Error Condition="!Exists('..\..\packages\Microsoft.Windows.CppWinRT.2.0.190506.1\build\native\Microsoft.Windows.CppWinRT.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Windows.CppWinRT.2.0.190506.1\build\native\Microsoft.Windows.CppWinRT.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.190506.1\build\native\Microsoft.Windows.CppWinRT.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Windows.CppWinRT.2.0.190506.1\build\native\Microsoft.Windows.CppWinRT.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.190506.1\build\native\Microsoft.Windows.CppWinRT.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Windows.CppWinRT.2.0.190506.1\build\native\Microsoft.Windows.CppWinRT.targets'))" />
   </Target>
 </Project>
