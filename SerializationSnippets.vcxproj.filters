@@ -60,9 +60,6 @@
     <ClInclude Include="xml\file_array_nvp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="not_ready\polymorphic_shared_template.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="not_ready\polymorphic_raw_ptr_template.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -73,9 +70,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="not_ready\polymorphic_template_register_type.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="not_ready\split_non_intrusive.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="not_ready\polymorphic_split_member_func_intrusive.h">
@@ -93,6 +87,12 @@
     <ClInclude Include="binary\inmemory_polymorphism_ptr_register_type.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="text\polymorphic_shared_template.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text\split_non_intrusive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="text\polymorphic_shared_ptr\polymorphic_snippet.cpp">
@@ -101,5 +101,8 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE" />
   </ItemGroup>
 </Project>

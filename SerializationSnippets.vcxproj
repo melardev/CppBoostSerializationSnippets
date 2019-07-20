@@ -32,12 +32,12 @@
     <ClInclude Include="binary\image_file_binary_serialization.h" />
     <ClInclude Include="binary\inmemory_strings_serialization.h" />
     <ClInclude Include="not_ready\polymorphic_raw_ptr_template.h" />
-    <ClInclude Include="not_ready\polymorphic_shared_template.h" />
+    <ClInclude Include="text\polymorphic_shared_template.h" />
     <ClInclude Include="not_ready\polymorphic_shared_template_non_intrusive.h" />
     <ClInclude Include="not_ready\polymorphic_template_register_type.h" />
     <ClInclude Include="not_ready\references_serialization.h" />
     <ClInclude Include="not_ready\polymorphic_split_member_func_intrusive.h" />
-    <ClInclude Include="not_ready\split_non_intrusive.h" />
+    <ClInclude Include="text\split_non_intrusive.h" />
     <ClInclude Include="not_ready\split_non_intrusive_split_free.h" />
     <ClInclude Include="snippets_launcher.h" />
     <ClInclude Include="text\class_hierarchy_serialization.h" />
@@ -57,12 +57,15 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="text\polymorphic_shared_ptr\polymorphic_snippet.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{10CBA0E7-3B97-4611-BBD8-A81CA6666082}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SerializationSnippets</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <VcpkgTriplet Condition="'$(Platform)'=='Win32'">x86-windows-static</VcpkgTriplet>
     <VcpkgTriplet Condition="'$(Platform)'=='x64'">x64-windows-static</VcpkgTriplet>
   </PropertyGroup>
@@ -70,26 +73,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>

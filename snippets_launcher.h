@@ -14,7 +14,9 @@
 #include "text/class_hierarchy_serialization.h"
 #include "text/inmemory_sstream_serialization.h"
 #include "text/polymorphic_shared_ptr/polymorphic_snippet.h"
-
+#include "text/polymorphic_shared_template.h"
+#include "text/split_non_intrusive_macro.h"
+#include "text/split_non_intrusive_split_free.h"
 
 // XML based serialization
 /*
@@ -38,11 +40,6 @@
 #include "binary/inmemory_strings_serialization.h"
 
 
-#include "text/polymorphic_shared_template.h"
-#include "not_ready/polymorphic_raw_ptr_template.h"
-#include "not_ready/polymorphic_shared_template_non_intrusive.h"
-
-
 namespace SerializationSnippetsLauncher
 {
 	static void main()
@@ -63,11 +60,11 @@ namespace SerializationSnippetsLauncher
 		// ClassHierarchySerialization::main();
 		// SerializationPolymorphism::main();
 		// PolymorphicSharedSerialization::main();
-		PolymorphicSharedTemplate::main();
-
+		// PolymorphicSharedTemplate::main();
+		// SerializationSplitNonIntrusive::main();
+		SerializationSplitNonIntrusiveNonMacro::main();
 
 		// PolymorphicSharedTemplate::main();
-		// PolymorphicSharedTemplateNonIntrusive::main();
 
 		// XML I am sorry but for the XML Snippets you have to uncomment the XML includes
 		// And comment the other includes, I don't know why but if you use all includes
